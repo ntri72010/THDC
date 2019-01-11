@@ -1,24 +1,18 @@
-# THDC
-#include <iostream>
-using namespace std ;
+# THDC bài kiểm tra giữa kỳ
+#include<iostream>
+#include<cmath>
+using namespace std;
 int main()
 {
-	double s; //so tien gui
-	double n; //lai xuat 
- 	double k; //so tien ky vong
- 	
-	cout<<"Nhap so tien gui:";
-	cin>>s;
-	cout<<"Nhap lai xuat (%)";
-	cin>>n;
-	cout<<"Nhap so tien ky vong:";
-	cin>>k;
-	double e=0;
-	while(s<k);
-	{
-		s=s+(s*n/100);
-		e=e+1;
-	}
-	cout<<"so nam de dat duoc so tien ky vong:"<<e;
-	return 0;
+	double a,b,c;
+	int n;
+	cout<<"Nhap vao so tien ban dau= ";
+	cin>>a;
+	cout<<"Nhap vao so tien ky vong= ";
+	cin>>b;
+	cout<<"Nhap vao lai suat (%):";
+	cin>>c;
+	n=(log10(b/a))/(log10(1+c*1/100));
+	cout<<"So nam de dat duoc so tien ky vong="<<n;
+    return 0;
 }
